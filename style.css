@@ -1,0 +1,227 @@
+/*=======================================================
+          
+G o o d L u c k  from Codoxia
+
+=========================================================*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(walpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.img {
+    width:100px;
+    height: 100px;
+    
+}
+nav {
+    height: 10vh;
+    background-color:rgba(214, 214, 22, 0.986);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+     
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.picture {
+
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.picture:hover{
+    animation: shake 2.0s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+.picture p {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:whitesmoke;
+    margin: 20px;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+.picture p:hover{
+    color:black;
+}
+
+
+.picture h1 {
+    margin: 90px;
+    margin-bottom: 0px;
+    font-size: 100px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.picture h1:hover{
+    color:white;
+}
+
+
+footer{
+width: 100%;
+background-color:transparent;
+height: 7vh;
+color:white;
+text-align: center;
+
+}
+
+
+@media screen and (max-width: 4096px) {
+   .line {
+       width: 30px;
+       height: 3px;
+       background: white;
+       margin: 5px;
+   } 
+    nav {
+        position: relative
+    }
+
+    .dot {
+        position: absolute;
+        cursor:pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    .dot:hover{
+      padding:30px;
+    
+    }
+    
+    .nav-links {
+        position: fixed;
+        background-color:rgba(214, 214, 22, 0.986);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 0.8s ease-out; /* Speed of animation */
+        pointer-events: none;
+      
+    }
+    .nav-links.open {
+        clip-path: circle(4096px at 90% -10%);
+        -webkit-clip-path: circle(4096px at 90% -10%);
+        pointer-events: all;
+    }
+    .picture{
+       flex-direction: column;
+    }
+    .nav-links li {
+        opacity: 1.5;
+    }
+    .nav-links li a {
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 50px;
+
+        
+    }
+    .nav-links li a:hover{
+        font-size: 30px;
+        border: 2px solid rgba(51, 51, 51, 0.253);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: orange;
+  
+    }
+   
+}
+
+
+
+/*======== I M P O R T A N T   P A R T ============ */
+
+
+
+  @media only screen and (max-width: 1280px) {
+    
+    .picture h1 {
+        font-size: 50px;
+    }
+    .picture p {
+        font-size: 30px;
+    }
+    
+  }
+  @media only screen and (max-width: 950px) {
+    
+    .picture h1 {
+        font-size: 40px;
+    }
+    .picture p {
+        font-size: 20px;
+    }
+   
+}
+  @media only screen and (max-width: 500px) {
+    
+    .picture h1 {
+        font-size: 30px;
+    }
+    .picture p {
+        font-size: 20px;
+    }
+  
+  }
+  
+
+
+  /* T H A N K  Y O U  G U Y S */
